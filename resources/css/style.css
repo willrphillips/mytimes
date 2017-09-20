@@ -2,14 +2,33 @@ html {
 
 }
 
-.logo {
-  display: inline-block;
+header {
   display: flex;
   align-items: center;
-  z-index: 10;
-  font-family: verdana, sans-serif;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 75px;
+  border-bottom: 1px solid black;
+  background-color: white;
+  font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 .logo h1 {
@@ -19,13 +38,18 @@ html {
 }
 
 .logo img {
-  margin-right: 14px;
+  margin-right: 10px;
+  padding-left: 30px;
 }
 
-header {
+nav span {
+  display: inline-block;
   display: flex;
-  width: 100%;
+  padding: 20px 10px;
+
+  justify-content: center;
 }
+
 
 a {
   color: black;
@@ -34,4 +58,14 @@ a {
 .head .logo {
   display: flex;
   display: inline-block;
+}
+
+.content {
+  margin-top: 75px;
+  border: 2px solid blue;
+}
+
+.content h2 {
+  display: flex;
+  padding-top: 155px;
 }
