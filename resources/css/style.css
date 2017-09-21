@@ -24,7 +24,6 @@ header {
   display: flex;
   align-items: center;
   flex-grow: 2;
-  border: 1px solid black;
 }
 
 .logo h1 {
@@ -54,16 +53,10 @@ a {
   color: black;
 }
 
-div {
-  border: 1px solid black;
-}
-
-div span {
-  border: 1px solid black;
-}
 
 .content {
   display: flex;
+  justify-content: space-between;
   margin-top: 85px;
   margin-left: 5px;
 }
@@ -206,17 +199,92 @@ div.cats.image-content {
   }
 
 .column.small {
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
   margin-right: 8px;
   right: 0px;
-  flex-shrink: 1;
+  flex-shrink: 10;
   flex-direction: column;
   top: 25%;
+  margin-top: 5%;
+  position: relative;
 }
 
 .column.small p.narrative {
   display: flex;
   right: 5px;
+  flex-shrink: 1;
+  top: 25%;
   font-family: serif;
+}
+
+.right-nav {
+  flex-shrink: 1;
+  flex-basis: 240px;
+  flex-direction: column;
+}
+
+.bite-headline {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+.news-bite-links p {
+  margin: 0px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-size: 12px;
+  font-family: verdana;
+  background-color: whitesmoke;
+  color: dimgray;
+  padding: 10px 20px;
+}
+
+.news-bite-links a {
+  font-style: normal;
+  color: dimgray;
+  text-decoration: none;
+}
+
+.footer {
+  margin: 7px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: mediumaquamarine;
+}
+
+#title {
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Verdana;
+  padding-right: 25px;
+  border-right: 1px solid white;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+}
+
+.nav2 ul {
+  display: inline-block;
+  font-size: 12px;
+  margin: 10px 0px;
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav2 li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.nav2 p {
+  display: inline-block;
+  margin: 0px 0px;
 }
