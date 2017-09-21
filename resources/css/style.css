@@ -10,31 +10,21 @@ header {
   width: 100%;
   height: 75px;
   border-bottom: 1px solid black;
-  background-color: white;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  display: flex;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo {
+.logo , .logo h1 {
   display: flex;
   align-items: center;
-}
 
-.logo h1 {
-  font-size: 14px;
-  display: flex;
   color: mediumaquamarine;
+  font-size: 14px;
 }
 
 .logo img {
@@ -42,30 +32,80 @@ nav {
   padding-left: 30px;
 }
 
-nav span {
+nav {
+  padding: 20px 10px;
   display: inline-block;
   display: flex;
-  padding: 20px 10px;
-
-  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
+nav span {
+  padding: 5px 5px;
+  margin: 5px 5px;
+  align-items: baseline;
+}
 
 a {
   color: black;
 }
 
-.head .logo {
-  display: flex;
-  display: inline-block;
+div {
+  border: 1px solid black;
+}
+
+div span {
+  border: 1px solid black;
 }
 
 .content {
+  display: flex;
   margin-top: 75px;
-  border: 2px solid blue;
 }
 
-.content h2 {
+.column {
   display: flex;
-  padding-top: 155px;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.lead-story {
+
+}
+
+.image-content span {
+  display: block;
+}
+
+p {
+  display: block;
+}
+
+.stories {
+
+}
+
+.story {
+
+}
+
+.text-content {
+  
+}
+
+.narrative {
+  color: blue;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
 }
