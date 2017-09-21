@@ -88,6 +88,10 @@ div span {
   font-weight: bold;
 }
 
+h2 {
+  font-size: 36px;
+}
+
 .image-content {
   display: block;
   position: relative;
@@ -100,6 +104,9 @@ div span {
 
 .narrative {
   display: block;
+  font-size: 17px;
+  font-family: georgia;
+  color: black
 }
 
 p {
@@ -107,19 +114,60 @@ p {
 }
 
 .stories {
+  display: flex;
+  justify-content: space-between;
+}
 
+div.fall-cancelled.image-content span {
+  background-image: url("../images/img-story-2.png");
+  height: 300px;
+  display: flex;
+  font-size: 30px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+div.fall-cancelled.image-content {
+  font-family: georgia;
+  font-size: 17px;
+  color: white;
+  display: block;
+  width: 100%;
+  font-size: 17px;
+  font-family: georgia;
+  font-weight: bold;
+}
+
+div.cameras.image-content span {
+  background-image: url("../images/img-story-3.png");
+  height: 300px;
+  display: flex;
+  font-size: 30px;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+div.cameras.image-content {
+  font-family: georgia;
+  font-size: 17px;
+  color: white;
+  display: block;
+  width: 100%;
+  font-size: 17px;
+  font-family: georgia;
+  font-weight: bold;
 }
 
 .story {
-
+  width: 300px;
 }
 
 .text-content {
 
-}
-
-.narrative {
-  color: blue;
 }
 
 .column.medium {
